@@ -1,0 +1,1 @@
+forfiles /m *.dat /c "cmd /c c:\bin\import.bat cl115_fresh @file > import.log > @file.log 2>&1"
