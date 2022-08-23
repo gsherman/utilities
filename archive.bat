@@ -13,7 +13,7 @@ REM c:\bin\diet.exe
 REM C:\bin\diet\2.2.0\mssql\diet.exe
 REM C:\bin\diet\2.2.1\mssql\diet.exe
 
-C:\bin\diet.exe -expdef -license 655934BB -user_name sa -password sa -db_server . -db_name %1 -export archived.dat -archive -dir %2 -mes_file archive.mes -query -parser -pparser -log_file archive.log -sqllog sql.log
+C:\bin\diet.exe -expdef -license SECRET -user_name sa -password sa -db_server . -db_name %1 -export archived.dat -archive -dir %2 -mes_file archive.mes -query -parser -pparser -log_file archive.log -sqllog sql.log
 REM -sqllog sql.log  -objid -report 100 -no_stopif %3 %4 %5 %6 %7 %8 %9 
 REM -mes_file archive.mes -query -parser -pparser -log_file archive.log -sqllog sql.log
 
