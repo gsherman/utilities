@@ -9,7 +9,7 @@ echo.
 if "%1" == "" goto usage 
 if "%2" == "" goto usage 
 
-c:\bin\diet.exe -license 655934BB -user_name sa -password sa -db_server . -db_name %1 -export exported.dat -dir %2 -sqllog sql.log -archive
+c:\bin\diet.exe -license SECRET -user_name sa -password sa -db_server . -db_name %1 -export exported.dat -dir %2 -sqllog sql.log -archive
 
 goto done
 
