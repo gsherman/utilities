@@ -31,9 +31,9 @@ FOR /f "tokens=1-4 delims=:.," %%T IN ("%TIME%") DO (
 :skip_timing
 
 REM checksum the directives file:
-REM c:\bin\diet.exe -user_name sa -password sa -db_server . -db_name %1 -directive %2 -checksum 655934BB -archive
+REM c:\bin\diet.exe -user_name sa -password sa -db_server . -db_name %1 -directive %2 -checksum SECRET -archive
 
-c:\bin\diet.exe -index_no_create -p_template index_template.txt -license 655934BB -user_name sa -password sa -db_server . -db_name %1 -export purged_data_%MYDATE%.dat -purge -dir %2 -sqllog sql.log  -report 100 -objid -eindex -no_stopif %3 %4 %5 %6 %7 %8 %9
+c:\bin\diet.exe -index_no_create -p_template index_template.txt -license SECRET -user_name sa -password sa -db_server . -db_name %1 -export purged_data_%MYDATE%.dat -purge -dir %2 -sqllog sql.log  -report 100 -objid -eindex -no_stopif %3 %4 %5 %6 %7 %8 %9
 
 goto skip_timing2
 
